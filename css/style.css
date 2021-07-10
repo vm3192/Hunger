@@ -4,7 +4,7 @@
   font-family: "Banny";
   font-display: swap;
   src: url("../fonts/Banny-BoldRound.woff") format("woff"), url("../fonts/Banny-BoldRound.woff2") format("woff2");
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -203,6 +203,26 @@ h6 {
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.m-title {
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.m-info {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.m-info span {
+  font-weight: 700;
 }
 
 section {
@@ -563,6 +583,69 @@ section {
   position: relative;
 }
 
+.master {
+  background: url(../img/master_bg.jpg) center/cover no-repeat;
+}
+
+.master__mini-title {
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.master__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.master__picture-wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 600px;
+          flex: 0 1 600px;
+  position: relative;
+  margin-right: 30px;
+}
+
+.master__picture-wrapper .picture-second {
+  right: auto;
+  left: 0;
+}
+
+.master__img-one {
+  margin-left: auto;
+}
+
+.master__box {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 600px;
+          flex: 0 1 600px;
+}
+
+.master__title {
+  margin-bottom: 15px;
+}
+
+.master__subtitle {
+  margin-bottom: 20px;
+}
+
+.master__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
 @media (min-width: 1292px) {
   .header__title {
     font-size: 96px;
@@ -810,6 +893,28 @@ section {
             flex: 0 1 auto;
     width: 100%;
     margin-bottom: 35px;
+  }
+
+  .master__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .master__box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    margin-right: 0;
+  }
+
+  .master__picture-wrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    width: 100%;
+    margin: 0 0 35px 0;
   }
 }
 
