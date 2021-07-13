@@ -1388,6 +1388,27 @@ section {
   opacity: 0.6;
 }
 
+.footer {
+  min-height: 100px;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer p {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
 @media (min-width: 1292px) {
   .header__title {
     font-size: 96px;
