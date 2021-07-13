@@ -1388,6 +1388,10 @@ section {
   opacity: 0.6;
 }
 
+.map iframe {
+  display: block;
+}
+
 .footer {
   min-height: 100px;
   background-color: #000;
