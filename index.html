@@ -7,6 +7,10 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
     <link rel="stylesheet" href="css/style.min.css" />
     <title>Hunger</title>
   </head>
@@ -836,10 +840,12 @@
               form.
             </p>
             <div class="events__row">
-              <div class="events__picture-wrapper events__picture-wrapper--left">
-								<div class="events__shell">
-									<p>weddings</p>
-								</div>
+              <div
+                class="events__picture-wrapper events__picture-wrapper--left"
+              >
+                <div class="events__shell">
+                  <p>weddings</p>
+                </div>
                 <div class="events__img-one picture-main">
                   <img src="img/events_img1.jpg" alt="#" />
                 </div>
@@ -848,9 +854,9 @@
                 </div>
               </div>
               <div class="events__picture-wrapper">
-								<div class="events__shell">
-									<p>corporate parties</p>
-								</div>
+                <div class="events__shell">
+                  <p>corporate parties</p>
+                </div>
                 <div class="events__img-one picture-main">
                   <img src="img/events_img2.jpg" alt="#" />
                 </div>
@@ -861,6 +867,32 @@
             </div>
           </div>
         </section>
+        <div class="gallery">
+          <a
+            class="gallery__item"
+            href="img/gallery_img1.jpg"
+            data-fancybox="gallery"
+            ><img src="img/gallery_img1.jpg" alt="img"
+          /></a>
+          <a
+            class="gallery__item"
+            href="img/gallery_img2.jpg"
+            data-fancybox="gallery"
+            ><img src="img/gallery_img2.jpg" alt="img"
+          /></a>
+          <a
+            class="gallery__item"
+            href="img/gallery_img3.jpg"
+            data-fancybox="gallery"
+            ><img src="img/gallery_img3.jpg" alt="img"
+          /></a>
+          <a
+            class="gallery__item"
+            href="img/gallery_img4.jpg"
+            data-fancybox="gallery"
+            ><img src="img/gallery_img4.jpg" alt="img"
+          /></a>
+        </div>
       </main>
 
       <footer class="footer">
@@ -872,6 +904,7 @@
 
     <!-- подключаем scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
     <script src="js/script.min.js"></script>
     <!-- подключаем scripts -->
   </body>
